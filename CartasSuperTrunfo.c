@@ -69,7 +69,6 @@ printf("-----> PIB DA CARTA: %.2f \n", Pib);
 printf("-----> PONTO TURISTICO DA CARTA: %d \n", ponto_turistico);
 
 
-
 return 0;
 
 
