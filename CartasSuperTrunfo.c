@@ -1,22 +1,76 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+int main(){
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
-    return 0;
+    //Variaveis estado/cidade
+
+    char Estado = 'A'; 
+    char Codigo[10]="A01";     //Varival do tipo char [String].
+    char Cidade='1';  //Varival do tipo char [String].
+    int Populacao = 10;          //Variavel do tipo int, numero inteiro.
+    float Area = 50;  //Variavel do tipo float, numero com ponto flutuante.              
+    float Pib = 20;    //Variavel do tipo float, numero com ponto flutuante.              
+    int ponto_turistico = 10;   //Variavel do tipo int, numero inteiro.
+
+
+
+
+
+
+    // INFORMAÇÕES DA CARTA
+
+printf(" \n ---------- INFORMAÇÕES DA CARTA ----------  \n"); //
+
+
+printf("-----> PAIS DA CARTA: BRASIL \n");
+
+
+printf("-----> ESTADO DA CARTA: %c \n", Estado); //Informando o estado da carta
+
+
+printf("-----> CIDADE DA CARTA: %c \n", Cidade); // Informando a cidade da carta
+
+
+printf("-----> CODIGO DA CARTA: %s \n", Codigo);
+
+
+
+printf("----------> INSIRA AS INFORMAÇÕES SOLICITADAS: \n");  // REGISTRO DE INFORMAÇÕES DA CARTA
+
+
+printf("Insira a população (Apenas numeros): \n");
+scanf(" %d", &Populacao);
+
+
+printf("Insira a Área (Apenas numeros): \n");
+scanf(" %f", &Area);
+
+
+printf("Insira o Pib (Apenas numeros): \n");
+scanf(" %f", &Pib);
+
+
+printf("Insira quantidade de pontos turisticos: \n");
+scanf(" %d", &ponto_turistico);
+
+
+
+
+
+printf("---------- INFORMAÇÕES DA CARTA ---------- \n"); //MOSTRANDO AS INFORMAÇÕES DA CARTA
+
+printf("-----> ESTADO DA CARTA: %c \n", Estado);
+printf("-----> CIDADE DA CARTA: %c \n", Cidade);
+printf("-----> CODIGO DA CARTA: %s \n", Codigo);
+printf("-----> POPULAÇÃO DA CARTA: %d \n", Populacao);
+printf("-----> ÁREA DA CARTA: %.2f \n", Area);
+printf("-----> PIB DA CARTA: %.2f \n", Pib);
+printf("-----> PONTO TURISTICO DA CARTA: %d \n", ponto_turistico);
+
+
+
+return 0;
+
+
 }
